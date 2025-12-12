@@ -1,0 +1,10 @@
+{
+  "name": "book-collection-server",
+  "version": "1.0.0",
+  "description": "Server-side project with MongoDB for book collection management",
+  "dependencies": {
+    "express": "^4.22.1",
+    "jquery": "^3.7.1",
+    "mongoose": "^7.8.8"
+  }
+}

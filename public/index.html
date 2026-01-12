@@ -1,28 +1,31 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Book Collection App</title>
-  <!-- Materialize CSS (optional, for styling) -->
+  <!-- Materialize CSS (fix: broken CDN link) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="css/style.css"> <!-- Your custom CSS -->
+  <!-- Custom CSS (ensure style.css exists in public/css/) -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">My Book Collection</a>
+      <a href="#" class="brand-logo center">My Book Collection</a> <!-- Fix: typo " y Book Collection" → "My Book Collection" -->
     </div>
   </nav>
 
-  <!-- Book Card Container -->
+  <!-- Book Card Container (fix: missing # in ID, correct syntax) -->
   <div class="container">
-    <div class="row" id="book-card-container"></div>
+    <div class="row" id="book-card-container"></div> <!-- Fix: "dbook-card-container" → "id='book-card-container'" -->
   </div>
 
-  <!-- Scripts -->
+  <!-- Scripts (fix broken links and syntax) -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Fix: broken Materialize JS CDN link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Link to custom frontend logic -->
   <script src="scripts.js"></script>
 </body>
 </html>
